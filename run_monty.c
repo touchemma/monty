@@ -118,7 +118,7 @@ int run_monty(FILE *script_fd)
 
 	if (init_stack(&stack) == EXIT_FAILURE)
 		return (EXIT_FAILURE);
-
+	
 	while (getline(&line, &len, script_fd) != -1)
 	{
 		line_number++;
